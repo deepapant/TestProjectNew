@@ -13,11 +13,12 @@ public void GotoHomePage()
 // verify the home page//
 public string verifyhomepagetitle() 
 { return string text=driver.findelement(HomePageTitle).gettext();
- assert.areequal(actualtitle,expectedtitle );}
+ assert.areequal(actualtitle,text );}
 // navigate to otherpage ex industries//
 public void industrypage()
 {drive.findelement(IndustryPageNavigator).click();}
 //verify theindustry page//
 public string getindustrypagetitle()
 { return strig industrypagetext= driver.findelement(IndustryPageTitle).gettext();
-assert.areequal(actualtitle,expectedtitle);}
+assert.areequal(actualtitle,industrypagetext);
+}
